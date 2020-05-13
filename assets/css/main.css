@@ -326,7 +326,7 @@ input, select, textarea {
 	}
 
 	hr {
-		border-bottom-color: rgba(255, 255, 255, 0.35);
+		border-bottom-color: rgba(255, 255, 255, 0.50);
 	}
 
 /* Row */
@@ -3119,7 +3119,7 @@ input, select, textarea {
 				#header.alt .logo img {
 					display: block;
 					margin: 0 auto;
-					max-width: 30%;
+					max-width: 40%;
 				}
 
 		@media screen and (max-width: 1280px) {
@@ -3343,17 +3343,6 @@ input, select, textarea {
 
 /* Main */
 
-	#main {
-		-moz-transition: opacity 3s ease;
-			-webkit-transition: opacity 3s ease;
-			-ms-transition: opacity 3s ease;
-			transition: opacity 3s ease;
-			-moz-transition-delay: 0.5s;
-			-webkit-transition-delay: 0.5s;
-			-ms-transition-delay: 0.5s;
-			transition-delay: 0.5s;
-			opacity: 1;
-	}
 
 
 		#main input, #main select, #main textarea {
@@ -3379,10 +3368,6 @@ input, select, textarea {
 		#main code {
 			background: rgba(222, 222, 222, 0.25);
 			border-color: #dddddd;
-		}
-
-		#main hr {
-			border-bottom-color: #dddddd;
 		}
 
 		#main .box {
@@ -3602,6 +3587,8 @@ input, select, textarea {
 			border-top: solid 1px #dddddd;
 		}
 
+
+
 			#main > .main:first-child {
 				border-top: 0;
 			}
@@ -3625,9 +3612,27 @@ input, select, textarea {
 				#main .copyright, #main .location {
 			width: 100%;
 			margin: 2.5em 0 2em 0;
-			font-size: 0.8em;
+			font-size: 1em;
 			text-align: center;
-		}
+			}
+
+			#main .location {
+				font-weight: bold;
+			}
+
+			#main p .location {
+				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
+				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
+				-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
+				transition: opacity 1.25s ease, transform 0.5s ease;
+				-moz-transition-delay: 0s;
+				-webkit-transition-delay: 0s;
+				-ms-transition-delay: 0s;
+				transition-delay: 0s;
+				display: block;
+				margin: 0 0 1.5em 0;
+			}
+
 
 
 		@media screen and (max-width: 1280px) {
@@ -3809,3 +3814,18 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+#main {
+	-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
+	-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
+	-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
+	transition: opacity 1.25s ease, transform 0.5s ease;
+	-moz-transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+	-ms-transition-delay: 0s;
+	transition-delay: 0s;
+	display: block;
+	margin: 0 0 1.5em 0;
+}
